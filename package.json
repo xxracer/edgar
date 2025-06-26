@@ -1,5 +1,6 @@
 {
-  "name": "nextn",
+  "name": "emergency-locksmith-website",
+  "description": "A website for an emergency locksmith service, built with Next.js, Tailwind CSS, and Genkit.",
   "version": "0.1.0",
   "private": true,
   "scripts": {
