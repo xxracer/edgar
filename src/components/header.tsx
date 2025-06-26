@@ -23,7 +23,7 @@ export default function Header() {
       <div className="container flex h-16 items-center">
         <div className="mr-8 hidden md:flex">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/car lockouts logo.png" alt="Emergency Locksmith Logo" width={40} height={40} />
+            <Image src="https://static.wixstatic.com/media/c5947c_01ae2a13fd3e433094c0d286ddd5a9ee~mv2.png" alt="Emergency Locksmith Logo" width={40} height={40} />
             <span className="font-headline font-bold text-lg">Emergency Locksmith</span>
           </Link>
         </div>
@@ -56,7 +56,7 @@ export default function Header() {
                         <SheetContent side="left">
                             <div className="grid gap-6 p-6">
                                 <Link href="/" className="flex items-center gap-2 mb-4">
-                                    <Image src="/car lockouts logo.png" alt="Emergency Locksmith Logo" width={40} height={40} />
+                                    <Image src="https://static.wixstatic.com/media/c5947c_01ae2a13fd3e433094c0d286ddd5a9ee~mv2.png" alt="Emergency Locksmith Logo" width={40} height={40} />
                                     <span className="font-headline font-bold text-lg">Emergency Locksmith</span>
                                 </Link>
                                 {navLinks.map((link) => (

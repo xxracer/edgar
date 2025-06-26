@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <Image src="/car lockouts logo.png" alt="Emergency Locksmith Logo" width={24} height={24} />
+              <Image src="https://static.wixstatic.com/media/c5947c_01ae2a13fd3e433094c0d286ddd5a9ee~mv2.png" alt="Emergency Locksmith Logo" width={24} height={24} />
               <span className="font-headline font-bold text-lg">Emergency Locksmith</span>
             </Link>
             <p className="text-muted-foreground text-sm">

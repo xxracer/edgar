@@ -6,6 +6,7 @@ interface ServiceSchemaProps {
 
 // NOTE: Replace "https://your-domain.com" with your actual domain for production.
 const domain = "https://your-domain.com";
+const logoUrl = "https://static.wixstatic.com/media/c5947c_01ae2a13fd3e433094c0d286ddd5a9ee~mv2.png";
 
 export const getServiceSchema = ({ name, description, url }: ServiceSchemaProps) => ({
   "@context": "https://schema.org",
@@ -15,7 +16,7 @@ export const getServiceSchema = ({ name, description, url }: ServiceSchemaProps)
     "@type": "Locksmith",
     "name": "Emergency Locksmith",
     "telephone": "+1-281-989-0245",
-    "image": `${domain}/car%20lockouts%20logo.png`, 
+    "image": logoUrl, 
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "123 Main St", 
@@ -41,7 +42,7 @@ export const getLocalBusinessSchema = () => ({
   "name": "Emergency Locksmith",
   "telephone": "+1-281-989-0245",
   "url": domain,
-  "logo": `${domain}/car%20lockouts%20logo.png`,
+  "logo": logoUrl,
   "image": `https://placehold.co/1200x630.png`,
   "description": "Fast, reliable, and affordable lockout services for your car, home, or safe. Call (281)989-0245 for immediate assistance. We are available 24/7.",
   "address": {
