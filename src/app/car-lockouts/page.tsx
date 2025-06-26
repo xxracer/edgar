@@ -67,7 +67,7 @@ export default function CarLockoutsPage() {
               </ul>
             </div>
             <div className="relative h-80">
-              <Image src="https://placehold.co/600x400.png" alt="A set of car keys" fill className="object-cover rounded-lg shadow-xl" data-ai-hint="car keys"/>
+              <Image src="https://static.wixstatic.com/media/c5947c_cc3f5ab8c5f440d4a21d04e3abd4d96e~mv2.png" alt="Locksmith holding a set of car keys" fill className="object-cover rounded-lg shadow-xl" data-ai-hint="car keys"/>
             </div>
           </div>
         </div>
