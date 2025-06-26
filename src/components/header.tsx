@@ -4,14 +4,8 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
-import { Menu, Lock, ChevronDown } from 'lucide-react';
+import { Menu, Lock } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -20,14 +14,8 @@ const navLinks = [
   { href: '/safe-lockouts', label: 'Safe Lockouts' },
 ];
 
-const adminLinks = [
-    { href: '/admin/seo-tool', label: 'Keyword Tool' },
-    { href: '/admin/seo-content-editor', label: 'Content Optimizer' }
-];
-
 export default function Header() {
   const pathname = usePathname();
-  const isAdminPage = pathname.startsWith('/admin');
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -53,24 +41,6 @@ export default function Header() {
                 {link.label}
                 </Link>
             ))}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className={cn(
-                    'flex items-center gap-1 transition-colors hover:text-primary text-sm font-medium',
-                    isAdminPage ? 'text-primary' : 'text-muted-foreground'
-                )}>
-                  Admin Tools
-                  <ChevronDown className="h-4 w-4" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                {adminLinks.map((link) => (
-                  <DropdownMenuItem key={link.href} asChild>
-                    <Link href={link.href}>{link.label}</Link>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
             </nav>
 
             <div className="flex items-center gap-2">
@@ -100,21 +70,6 @@ export default function Header() {
                                     {link.label}
                                 </Link>
                                 ))}
-                                <div className="border-t pt-6 mt-2 space-y-4">
-                                    <p className="text-muted-foreground font-medium">Admin Tools</p>
-                                    {adminLinks.map((link) => (
-                                        <Link
-                                            key={link.href}
-                                            href={link.href}
-                                            className={cn(
-                                                'block text-lg font-medium transition-colors hover:text-primary',
-                                                pathname === link.href ? 'text-primary' : 'text-muted-foreground'
-                                            )}
-                                        >
-                                            {link.label}
-                                        </Link>
-                                    ))}
-                                </div>
                             </div>
                         </SheetContent>
                     </Sheet>
