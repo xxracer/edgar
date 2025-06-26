@@ -80,7 +80,7 @@ export default function Home() {
                     </div>
                 </div>
                  <div className="relative h-64 md:h-full min-h-[300px]">
-                     <Image src="https://www.canva.com/design/DAGraXy6j9M/uKlDIwGhVfcClcwqDgdEqA/view?utm_content=DAGraXy6j9M&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h33b7e286b2" alt="Locksmith helping with a car lockout" fill className="object-cover rounded-lg shadow-2xl" data-ai-hint="car lockout service" />
+                     <Image src="https://static.wixstatic.com/media/c5947c_b63427986db34ca381edfa87090c1806~mv2.png" alt="Emergency locksmith service van" fill className="object-cover rounded-lg shadow-2xl" data-ai-hint="locksmith van" />
                  </div>
             </div>
         </section>
