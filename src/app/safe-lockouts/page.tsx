@@ -38,6 +38,7 @@ export default function SafeLockoutsPage() {
             <p className="text-lg text-muted-foreground">
               Can't access your safe? Our certified technicians use specialized tools and techniques to open your safe while preserving its integrity and your valuables.
             </p>
+            <p className="font-bold text-accent text-xl">Service Fee: Starting at $35</p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-md transition-transform hover:scale-105">
               <a href="tel:2819890245">Request Safe Service: (281) 989-0245</a>
             </Button>

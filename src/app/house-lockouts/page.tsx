@@ -38,6 +38,7 @@ export default function HouseLockoutsPage() {
             <p className="text-lg text-muted-foreground">
               Being locked out of your own home is frustrating. We provide a quick and secure solution to get you back inside without damaging your property.
             </p>
+            <p className="font-bold text-accent text-xl">Service Fee: Starting at $35</p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-md transition-transform hover:scale-105">
               <a href="tel:2819890245">Call for Home Access: (281) 989-0245</a>
             </Button>

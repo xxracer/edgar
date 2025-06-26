@@ -38,6 +38,7 @@ export default function CarLockoutsPage() {
             <p className="text-lg text-muted-foreground">
               Locked out of your car? It's a stressful situation, but we're here to help. Our expert technicians provide fast, damage-free entry to get you back on the road in no time.
             </p>
+            <p className="font-bold text-accent text-xl">Service Fee: Starting at $35</p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-md transition-transform hover:scale-105">
               <a href="tel:2819890245">Get Help Now: (281) 989-0245</a>
             </Button>

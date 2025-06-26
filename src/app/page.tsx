@@ -23,19 +23,22 @@ const services = [
     icon: <Car className="h-10 w-10 text-primary" />,
     title: "Car Lockouts",
     description: "Stranded? We'll get you back in your vehicle quickly and without damage, 24/7.",
-    href: "/car-lockouts"
+    href: "/car-lockouts",
+    price: "Service Fee: Starting at $35"
   },
   {
     icon: <HomeIcon className="h-10 w-10 text-primary" />,
     title: "House Lockouts",
     description: "Locked out of your home? Our experts provide fast, reliable access to your property.",
-    href: "/house-lockouts"
+    href: "/house-lockouts",
+    price: "Service Fee: Starting at $35"
   },
   {
     icon: <Lock className="h-10 w-10 text-primary" />,
     title: "Safe Lockouts",
     description: "Can't access your valuables? We specialize in opening safes of all types.",
-    href: "/safe-lockouts"
+    href: "/safe-lockouts",
+    price: "Service Fee: Starting at $35"
   },
 ]
 
@@ -116,6 +119,7 @@ export default function Home() {
                             </CardHeader>
                             <CardContent>
                                 <p className="text-muted-foreground mb-4">{service.description}</p>
+                                <p className="font-semibold text-lg mb-4 text-accent">{service.price}</p>
                                 <Button asChild variant="link" className="text-primary font-bold">
                                     <Link href={service.href}>Learn More &rarr;</Link>
                                 </Button>
