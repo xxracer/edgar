@@ -24,7 +24,7 @@ export default function Header() {
         <div className="mr-8 hidden md:flex">
           <Link href="/" className="flex items-center gap-2">
             <Image src="https://static.wixstatic.com/media/c5947c_01ae2a13fd3e433094c0d286ddd5a9ee~mv2.png" alt="Emergency Locksmith Logo" width={50} height={50} />
-            <span className="font-headline font-bold text-lg">Emergency Locksmith</span>
+            <span className="font-headline font-bold text-lg">Car Lockouts</span>
           </Link>
         </div>
 
