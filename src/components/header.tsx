@@ -1,10 +1,11 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Button } from '@/components/ui/button';
-import { Menu, Lock } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
@@ -22,7 +23,7 @@ export default function Header() {
       <div className="container flex h-16 items-center">
         <div className="mr-8 hidden md:flex">
           <Link href="/" className="flex items-center gap-2">
-            <Lock className="h-6 w-6 text-primary" />
+            <Image src="/car lockouts logo.png" alt="Emergency Locksmith Logo" width={40} height={40} />
             <span className="font-headline font-bold text-lg">Emergency Locksmith</span>
           </Link>
         </div>
@@ -55,7 +56,7 @@ export default function Header() {
                         <SheetContent side="left">
                             <div className="grid gap-6 p-6">
                                 <Link href="/" className="flex items-center gap-2 mb-4">
-                                    <Lock className="h-6 w-6 text-primary" />
+                                    <Image src="/car lockouts logo.png" alt="Emergency Locksmith Logo" width={40} height={40} />
                                     <span className="font-headline font-bold text-lg">Emergency Locksmith</span>
                                 </Link>
                                 {navLinks.map((link) => (

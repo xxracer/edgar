@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Lock } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
-              <Lock className="h-6 w-6 text-primary" />
+              <Image src="/car lockouts logo.png" alt="Emergency Locksmith Logo" width={24} height={24} />
               <span className="font-headline font-bold text-lg">Emergency Locksmith</span>
             </Link>
             <p className="text-muted-foreground text-sm">

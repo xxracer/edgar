@@ -15,7 +15,7 @@ export const getServiceSchema = ({ name, description, url }: ServiceSchemaProps)
     "@type": "Locksmith",
     "name": "Emergency Locksmith",
     "telephone": "+1-281-989-0245",
-    "image": `${domain}/logo.png`, 
+    "image": `${domain}/car%20lockouts%20logo.png`, 
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "123 Main St", 
@@ -41,7 +41,7 @@ export const getLocalBusinessSchema = () => ({
   "name": "Emergency Locksmith",
   "telephone": "+1-281-989-0245",
   "url": domain,
-  "logo": `${domain}/logo.png`,
+  "logo": `${domain}/car%20lockouts%20logo.png`,
   "image": `${domain}/hero-image.png`,
   "description": "Fast, reliable, and affordable lockout services for your car, home, or safe. Call (281)989-0245 for immediate assistance. We are available 24/7.",
   "address": {
