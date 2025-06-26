@@ -4,20 +4,20 @@ import { Star } from "lucide-react"
 
 const testimonials = [
   {
-    name: "Sarah L.",
-    avatar: "SL",
+    name: "Sarah Johnson",
+    avatar: "SJ",
     text: "Incredibly fast service! I was locked out of my car at the grocery store, and they arrived in less than 20 minutes. The technician was professional and friendly. Highly recommend!",
     rating: 5,
   },
   {
-    name: "Mike R.",
-    avatar: "MR",
+    name: "David Martinez",
+    avatar: "DM",
     text: "Forgot my keys inside my house. The team was a lifesaver. They were careful with my lock and got me back inside without any damage. Fair pricing too.",
     rating: 5,
   },
   {
-    name: "Jessica P.",
-    avatar: "JP",
+    name: "Emily Chen",
+    avatar: "EC",
     text: "I needed my old safe opened and they handled it with expertise. I was worried it would be a huge issue, but they made it look easy. Very trustworthy and skilled.",
     rating: 5,
   },

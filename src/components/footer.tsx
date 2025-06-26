@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
               <Lock className="h-6 w-6 text-primary" />
-              <span className="font-headline font-bold text-lg">SecureAccess Pro</span>
+              <span className="font-headline font-bold text-lg">Emergency Locksmith</span>
             </Link>
             <p className="text-muted-foreground text-sm">
               Your trusted 24/7 emergency locksmith service.
@@ -32,7 +32,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>&copy; 2024 SecureAccess Pro. All rights reserved.</p>
+          <p>&copy; 2024 Emergency Locksmith. All rights reserved.</p>
         </div>
       </div>
     </footer>

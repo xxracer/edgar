@@ -13,7 +13,7 @@ export const getServiceSchema = ({ name, description, url }: ServiceSchemaProps)
   "serviceType": name,
   "provider": {
     "@type": "Locksmith",
-    "name": "SecureAccess Pro",
+    "name": "Emergency Locksmith",
     "telephone": "+1-281-989-0245",
     "image": `${domain}/logo.png`, 
     "address": {
@@ -38,7 +38,7 @@ export const getServiceSchema = ({ name, description, url }: ServiceSchemaProps)
 export const getLocalBusinessSchema = () => ({
   "@context": "https://schema.org",
   "@type": "Locksmith",
-  "name": "SecureAccess Pro",
+  "name": "Emergency Locksmith",
   "telephone": "+1-281-989-0245",
   "url": domain,
   "logo": `${domain}/logo.png`,

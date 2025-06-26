@@ -23,7 +23,7 @@ export default function Header() {
         <div className="mr-8 hidden md:flex">
           <Link href="/" className="flex items-center gap-2">
             <Lock className="h-6 w-6 text-primary" />
-            <span className="font-headline font-bold text-lg">SecureAccess Pro</span>
+            <span className="font-headline font-bold text-lg">Emergency Locksmith</span>
           </Link>
         </div>
 
@@ -56,7 +56,7 @@ export default function Header() {
                             <div className="grid gap-6 p-6">
                                 <Link href="/" className="flex items-center gap-2 mb-4">
                                     <Lock className="h-6 w-6 text-primary" />
-                                    <span className="font-headline font-bold text-lg">SecureAccess Pro</span>
+                                    <span className="font-headline font-bold text-lg">Emergency Locksmith</span>
                                 </Link>
                                 {navLinks.map((link) => (
                                 <Link

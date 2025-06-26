@@ -8,8 +8,8 @@ import Analytics from '@/components/analytics';
 
 export const metadata: Metadata = {
   title: {
-    default: 'SecureAccess Pro - 24/7 Emergency Locksmith Services',
-    template: '%s | SecureAccess Pro',
+    default: 'Emergency Locksmith - 24/7 Lockout Services',
+    template: '%s | Emergency Locksmith',
   },
   description: 'Fast, reliable, and affordable lockout services for your car, home, or safe. Call (281)989-0245 for immediate assistance. We are available 24/7.',
   keywords: ['car lockout', 'house lockout', 'safe lockout', 'emergency locksmith', '24/7 locksmith'],

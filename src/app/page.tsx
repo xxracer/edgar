@@ -8,7 +8,7 @@ import type { Metadata } from "next";
 import { getLocalBusinessSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: '24/7 Emergency Locksmith | SecureAccess Pro',
+  title: '24/7 Emergency Locksmith Services',
   description: 'Fast, reliable, and affordable 24/7 lockout services for your car, home, or safe. Call (281)989-0245 for immediate assistance in the Houston area.',
   alternates: {
     canonical: '/',
@@ -62,7 +62,7 @@ const features = [
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col animate-fade-in">
         {/* Hero Section */}
         <section className="relative w-full py-20 md:py-32 lg:py-40 bg-card">
             <div className="container grid md:grid-cols-2 gap-8 items-center">
@@ -94,7 +94,7 @@ export default function Home() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {features.map((feature, index) => (
-                        <div key={index} className="text-center p-6 bg-card rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                        <div key={index} className="text-center p-6 bg-card rounded-lg shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
                             <div className="flex justify-center mb-4">{feature.icon}</div>
                             <h3 className="font-headline text-xl font-semibold mb-2">{feature.title}</h3>
                             <p className="text-muted-foreground">{feature.description}</p>
@@ -120,8 +120,7 @@ export default function Home() {
                             </CardHeader>
                             <CardContent>
                                 <p className="text-muted-foreground mb-4">{service.description}</p>
-                                <p className="font-semibold text-lg mb-4 text-accent">{service.price}</p>
-                                <Button asChild variant="link" className="text-primary font-bold">
+                                <Button asChild variant="link" className="text-primary font-bold mt-4">
                                     <Link href={service.href}>Learn More &rarr;</Link>
                                 </Button>
                             </CardContent>
