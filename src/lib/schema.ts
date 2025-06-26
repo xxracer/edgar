@@ -42,7 +42,7 @@ export const getLocalBusinessSchema = () => ({
   "telephone": "+1-281-989-0245",
   "url": domain,
   "logo": `${domain}/car%20lockouts%20logo.png`,
-  "image": `${domain}/hero-image.png`,
+  "image": `https://placehold.co/1200x630.png`,
   "description": "Fast, reliable, and affordable lockout services for your car, home, or safe. Call (281)989-0245 for immediate assistance. We are available 24/7.",
   "address": {
     "@type": "PostalAddress",
