@@ -44,7 +44,7 @@ export default function CarLockoutsPage() {
             </Button>
           </div>
           <div className="relative h-64 md:h-80">
-            <Image src="https://placehold.co/600x400.png" alt="Technician unlocking a car door" fill className="object-cover rounded-lg shadow-xl" data-ai-hint="car key lockout"/>
+            <Image src="https://static.wixstatic.com/media/c5947c_e583293229584c9fbc4f216c464cd16e~mv2.png" alt="Locksmith working on a car door for a lockout service" fill className="object-cover rounded-lg shadow-xl" data-ai-hint="car lockout"/>
           </div>
         </div>
       </section>
