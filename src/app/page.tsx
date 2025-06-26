@@ -69,6 +69,7 @@ export default function Home() {
                 <div className="space-y-6 text-center md:text-left">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-headline tracking-tighter">Locked Out? We're On Our Way.</h1>
                     <p className="text-lg text-muted-foreground md:text-xl">Fast, professional, and affordable 24/7 emergency lockout services. Your key to peace of mind is just a call away.</p>
+                    <p className="font-bold text-accent text-xl">Service Fee: Starting at $35</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                         <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-lg transition-transform hover:scale-105">
                             <a href="tel:2819890245">Call Now: (281) 989-0245</a>
