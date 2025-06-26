@@ -67,7 +67,7 @@ export default function HouseLockoutsPage() {
               </ul>
             </div>
             <div className="relative h-80">
-              <Image src="https://placehold.co/600x400.png" alt="A person unlocking a house door" fill className="object-cover rounded-lg shadow-xl" data-ai-hint="house key lock" />
+              <Image src="https://static.wixstatic.com/media/c5947c_d37467c6804f430da9583fc39ee07b6d~mv2.jpg" alt="A person unlocking a house door" fill className="object-cover rounded-lg shadow-xl" data-ai-hint="house key lock" />
             </div>
           </div>
         </div>
