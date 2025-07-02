@@ -22,7 +22,7 @@ export default function Analytics() {
             }
           };
           gtag('event', 'conversion', {
-              'send_to': 'AW-11119582439',
+              'send_to': 'AW-11119582439/gnyeCJu0g78aEOe5nbYp',
               'event_callback': callback
           });
           return false;
