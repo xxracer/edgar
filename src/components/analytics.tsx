@@ -3,30 +3,38 @@
 import Script from 'next/script';
 
 export default function Analytics() {
-    const gaId = process.env.NEXT_PUBLIC_GA_ID;
     const gAdsId = 'AW-11119582439';
 
-    // gtag.js can be loaded with either ID. We'll use the Ads ID since it was provided.
-    const tagId = gAdsId || gaId;
-
-    if (!tagId) {
+    if (!gAdsId) {
         return null;
     }
 
-    // Build the config strings for each service
-    const configs = [];
-    if (gaId) {
-        configs.push(`gtag('config', '${gaId}', { page_path: window.location.pathname });`);
-    }
-    if (gAdsId) {
-        configs.push(`gtag('config', '${gAdsId}');`);
-    }
+    // PASO 1: La etiqueta de conversión para llamadas se debe añadir aquí.
+    // Google Ads te proporcionará esta etiqueta DESPUÉS de que el sitio esté en línea y verifique la instalación de la etiqueta global.
+    // Se verá algo como esto: 'AW-11119582439/AbC-D_E_F-g123456789'.
+    //
+    // Reemplaza 'AW-11119582439/REEMPLAZAR_CON_ETIQUETA_DE_CONVERSION' con la etiqueta real.
+    const conversionSnippet = `
+        function gtag_report_conversion(url) {
+          var callback = function () {
+            if (typeof(url) != 'undefined') {
+              window.location = url;
+            }
+          };
+          gtag('event', 'conversion', {
+              'send_to': 'AW-11119582439',
+              'event_callback': callback
+          });
+          return false;
+        }
+    `;
 
     return (
         <>
+            {/* PASO 2: Esta es la etiqueta global de Google. Ya está instalada correctamente. */}
             <Script
                 strategy="afterInteractive"
-                src={`https://www.googletagmanager.com/gtag/js?id=${tagId}`}
+                src={`https://www.googletagmanager.com/gtag/js?id=${gAdsId}`}
             />
             <Script
                 id="google-analytics"
@@ -37,8 +45,12 @@ export default function Analytics() {
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
 
-                    ${configs.join('\n                    ')}
+                    gtag('config', '${gAdsId}');
+
+                    ${conversionSnippet}
                 `,
                 }}
             />
         </>
+    );
+}
